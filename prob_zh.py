@@ -17,7 +17,7 @@ bert_tokenizer = BertTokenizer.from_pretrained('hfl/chinese-macbert-base')
 bert_model = BertForNextSentencePrediction.from_pretrained('hfl/chinese-macbert-base')
 bert_model = bert_model.to(device)
 
-huggingface_token = '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'
+huggingface_token = ''
 model_name = "itpossible/Chinese-Mistral-7B-v0.1"
 mistral_tokenizer = AutoTokenizer.from_pretrained(model_name, token=huggingface_token)
 mistral_model = AutoModelForCausalLM.from_pretrained(model_name, token=huggingface_token)
