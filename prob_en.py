@@ -17,7 +17,7 @@ bert_tokenizer = BertTokenizer.from_pretrained('google-bert/bert-large-uncased')
 bert_model = BertForNextSentencePrediction.from_pretrained('google-bert/bert-large-uncased')
 bert_model = bert_model.to(device)
 
-huggingface_token = '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'
+huggingface_token = ''
 model_name = "mistralai/Mistral-7B-v0.1"
 mistral_tokenizer = AutoTokenizer.from_pretrained(model_name, token=huggingface_token)
 mistral_model = AutoModelForCausalLM.from_pretrained(model_name, token=huggingface_token)
