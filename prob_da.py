@@ -17,7 +17,7 @@ bert_tokenizer = BertTokenizer.from_pretrained('Maltehb/danish-bert-botxo')
 bert_model = BertForNextSentencePrediction.from_pretrained('Maltehb/danish-bert-botxo')
 bert_model = bert_model.to(device)
 
-huggingface_token = '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'
+huggingface_token = ''
 model_name = "danish-foundation-models/munin-7b-alpha"
 mistral_tokenizer = AutoTokenizer.from_pretrained(model_name, token=huggingface_token)
 mistral_model = AutoModelForCausalLM.from_pretrained(model_name, token=huggingface_token)
